@@ -37,3 +37,9 @@ if (isNaN(num)) {
 
 
 let random = Math.random();
+let secondNum = prompt('Enter a number', '');
+if (random*100 > secondNum) {
+    alert(Math.round(random*100) + ' is bigger than ' + secondNum);
+} else {
+    alert(Math.round(random*100) + ' is smaller than ' + secondNum);
+}
