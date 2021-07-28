@@ -43,3 +43,15 @@ if (random*100 > secondNum) {
 } else {
     alert(Math.round(random*100) + ' is smaller than ' + secondNum);
 }
+
+
+let str = prompt('Мне нравится изучать Front-end', 'Мне нравится изучать Front-end');
+let str2 = prompt('Что вам нравится изучать?', '');
+let re = /[sss]/;
+// let result = 
+
+if (str2.includes(re)) {
+    alert('da!');
+} else {
+    alert('net!');
+}
