@@ -291,16 +291,15 @@ while (conf === false);
 
 
 //5
-(function sumOfOdd(summ) {
-    let newSum = 0;
-    for (let i = 0; i < summ; i++) {
-        if (i % 2 !== 0) {
-            newSum += i;
-        }
+let newSum = 0;
+let summ1 = +prompt("Введите число");
+for (let i = 0; i < summ1; i++) {
+    if (i % 2 !== 0) {
+        newSum += i;
     }
-    alert(newSum);
-})
-(+prompt("Введите число"));
+}
+alert(newSum);
+    
 
 
 //6
