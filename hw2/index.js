@@ -261,14 +261,11 @@ console.log(str);
 
 
 //2
-function squaredValue(num) {
-    for (let i = 1; i < num; i++) {
-        if (i % 4 === 0) {
-            alert(i + '^2 = ' + Math.pow(i, 2));
-        }
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 === 0) {
+        alert(i + '^2 = ' + Math.pow(i, 2));
     }
 }
-squaredValue(+prompt('Enter a number:', ''));
 
 
 //3
