@@ -30,25 +30,30 @@ console.log(str);
 
 
 //4
-function prop() {
-  const person = {
-      name: "George",
-      gender: "Male",
-      age: "28"
-  };
-  let property = prompt('Введите свойство объекта:');
+let person = {
+  name: "James",
+  age: "22",
+  gender: "male"
+};
 
-  if (property in person) {
-      alert('Cвойство ' + property + ' существует!');
-  } else {
-      person[property] = prompt('Введите новое значение свойства:');
-      prop();
-  }
-}
-prop();
+let prop = prompt('Че там надо', '');
+
+if (prop in person) alert('Свойство ' + prop + ' существует!');
+else (person[prop] = prompt("Введите новое значение"));
 
 
-//5
+//...5
+const mobile = {
+  brand: prompt('Brand'),
+  model: prompt('Model'),
+  resolution: prompt('Resolution'),
+  color: prompt('Color'),
+};
+person.mobile = mobile;
+console.log(person);
+
+
+//6
 
 
 
