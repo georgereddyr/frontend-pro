@@ -1,15 +1,16 @@
-let sum, symbols, emptyArr = [];
+let arr = [];
 
-while (!(symbols === null)) {
-    symbols = prompt('Введите любой символ');
-    emptyArr.push(symbols);
-  }
-  emptyArr.pop(symbols);
-  emptyArr.forEach((elem) => {
-    if (isNaN(+elem)) {
-        sum;
+for (let i = 0; i < 5; i++) {
+    let value = prompt('Enter a few values', '');
+    arr.push(value);
+}
+
+let arrSum = arr.reduce(function (sum, i) {
+    if (!isNaN(i)) {
+        return sum + Number(i);
     } else {
-        (sum += +elem);
-      }
-  alert(sum);
-});
+        return sum + 0;
+    }
+}, 0 );
+
+console.log(arrSum);

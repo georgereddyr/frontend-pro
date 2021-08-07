@@ -54,7 +54,22 @@ console.log(person);
 
 
 //6
+let array2 = [];
 
+for (let i = 0; i < 5; i++) {
+    let value = prompt('Enter a few values', '');
+    array2.push(value);
+}
+
+let arrSum = array2.reduce(function (sum, i) {
+    if (!isNaN(i)) {
+        return sum + Number(i);
+    } else {
+        return sum + 0;
+    }
+}, 0 );
+
+console.log(arrSum);
 
 
 //7
