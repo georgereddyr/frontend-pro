@@ -92,9 +92,16 @@ function removeFirstElem(array) {
 
 
 //5
-function addSomeElem(array) {
-    array.push(array.length - 1, 1);
-}
+let arrayZ = [1,2,3,4,5,6]; 
+ 
+function noPush(array, ...elements){ 
+    for(let i = 0; i < elements.length; i++){ 
+        array[array.length] = elements[i]; 
+    } 
+    console.log(array);     
+} 
+noPush(arrayZ, 1, 2); 
+noPush(arrayZ, 3, 4);
 
 
 //6
