@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: silver;
+    border: 1px solid black;
+}
+
+#x {
+    position: absolute;
+    top: 350px;
+    left: 5px;
+}
+#y {
+    position: absolute;
+    top: 370px;
+    left: 5px; 
+}
+
+button {
+    margin: 0.5em;
+}
+
