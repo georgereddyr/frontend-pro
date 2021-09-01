@@ -19,19 +19,16 @@ box.addEventListener('mouseleave', getBoxCoordinates);
 
 //2
 function getTime() {
-    let time = new Date(),
-        minutes = time.getMinutes().toString(),
-        hours = time.getHours().toString(),
-        seconds = time.getSeconds().toString();
-    document.getElementById('time').textContent = hours + ':' + minutes + ':' + seconds;
+    const time = document.querySelector('#time');
+    time.innerHTML = new Date().toTimeString().replace(/ .*/, '');
 }
 
-const t = setInterval(getTime);
+let t = setInterval(getTime);
 
-const start = document.getElementById('start').addEventListener('click', () => {
-    setInterval(getTime);
+const start = document.querySelector('#start').addEventListener('click', () => {
+    t = setInterval(getTime);
 });
 
-const stop = document.getElementById('stop').addEventListener('click', () => {
+const stop = document.querySelector('#stop').addEventListener('click', () => {
     clearInterval(t);
 });
