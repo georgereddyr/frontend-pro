@@ -26,6 +26,7 @@ function getTime() {
 let t = setInterval(getTime);
 
 const start = document.querySelector('#start').addEventListener('click', () => {
+    clearInterval(t);
     t = setInterval(getTime);
 });
 
