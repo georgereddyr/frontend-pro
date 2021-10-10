@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+p {
+    position: relative;
+    margin: 0;
+}
+
+span {
+    position: relative;
+    font-weight: bold;
+}
+
